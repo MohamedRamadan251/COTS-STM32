@@ -1,0 +1,33 @@
+{
+    "FunctionHeader":{
+		"prefix": "FunctionHeader",
+		"body": [
+                "/******************************************************************************/"
+                "/* Function: ${1:FUNCTION_NAME}"
+                "/* I/P Parameters: ${2:FUNCTION_PARAMETERS}"
+                "/* Returns:${3:RETURN_DATA}"
+                "/* Desc: ${4:DESCRIPTION}"
+                "/* Input ${5:INPUTS}"
+                "/******************************************************************************/"
+
+        ],
+    },
+    "FileHeader":{
+		"prefix": "FileHeader",
+		"body": [
+				"/****************************************************************************************"
+				"* ! Title\t\t\t:		${TM_FILENAME_BASE}"
+				"* ! File Name\t\t:		${TM_FILENAME}"
+				"* ! Description\t\t:	\t${1:Desciption of this file}"
+				"* ! Compiler\t\t:		GNU ARM Cross Compiler"
+				"* ! Target\t\t\t:		STM32F103xxxx Microcontroller"
+				"****************************************************************************************/"
+				"/****************************************************************************************"
+				"* LOG :"
+				"*	VERSION 		AUTHOR				DATE				DESCRIPTION"
+				"* 	  v1.0	 	Abdullah Mustafa  	$CURRENT_YEAR, $CURRENT_DATE $CURRENT_MONTH_NAME_SHORT		  Initial creation"
+				"*--------------------------------------------------------------------------------------"
+				"****************************************************************************************/"
+		],
+	},
+}
