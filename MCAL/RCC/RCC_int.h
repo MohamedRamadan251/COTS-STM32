@@ -13,6 +13,10 @@
 #define RCC_AHB2       2
 #define RCC_APB1       3
 #define RCC_APB2       4
+#define RCC_AHB1LPENR  5
+#define RCC_AHB2LPENR  6
+#define RCC_APB1LPENR  7
+#define RCC_APB2LPENR  8
 
 /*define peripheral at AHB1 bus*/
 #define RCC_EN_GPIOA   0
@@ -56,6 +60,10 @@
 #define RCC_EN_TIM9    16
 #define RCC_EN_TIM10   17
 #define RCC_EN_TIM11   18
+
+/*define peripheral at AHB1LP bus*/
+#define RCC_EN_FLITFLPEN   15
+
 
 /**
 	Function Name        : MRCC_voidInit

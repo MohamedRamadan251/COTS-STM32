@@ -23,7 +23,7 @@
    **ENABLE
    **DISABLE
  */
-#define RCC_CSS_ENABLE    ENABLE
+#define RCC_CSS_ENABLE    DISABLE
 
 /*System clock selection
  *Options
@@ -31,7 +31,7 @@
   **HSE  (High Speed External clock 16 MHZ)
   **PLL  (Phase Locked Loop   up to 84 MHZ)
  */
-#define SYSTEM_CLOCK  HSE
+#define SYSTEM_CLOCK  HSI
 
 /*AHB Prescaler
  *Options
@@ -45,7 +45,7 @@
   **DIVISION_256
   **DIVISION_512
  **/
-#define AHB_PRESCALER  NOT_DIVISION
+#define AHB_PRESCALER  DIVISION_2
 
 /*APB1 Prescaler
  *Options
@@ -70,8 +70,8 @@
 #define PLL_INPUT  HSE
 
 /*Enable / Disable the select clock source */
-#define RCC_HSE_ENABLE		ENABLE
-#define RCC_HSI_ENABLE		DISABLE
+#define RCC_HSE_ENABLE		DISABLE
+#define RCC_HSI_ENABLE		ENABLE
 #define RCC_PLL_ENABLE		DISABLE
 
 

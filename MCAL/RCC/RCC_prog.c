@@ -197,6 +197,18 @@ void MRCC_voidEnablePerephiralClock (u32 A_u32BusId, u32 A_u32PeripheralId)
 	    case RCC_APB2:
 	    	SET_BIT (RCC->APB2ENR , A_u32PeripheralId) ;
 	    	break ;
+	    case RCC_AHB1LPENR:
+	    	SET_BIT (RCC->AHB1LPENR , A_u32PeripheralId) ;
+	    	break ;
+	    case RCC_AHB2LPENR:
+	    	SET_BIT (RCC->AHB2LPENR , A_u32PeripheralId) ;
+	    	break ;
+	    case RCC_APB1LPENR:
+	    	SET_BIT (RCC->APB1LPENR , A_u32PeripheralId) ;
+	    	break ;
+	    case RCC_APB2LPENR:
+	    	SET_BIT (RCC->APB2LPENR , A_u32PeripheralId) ;
+	    	break ;
 	    default :
 	    	/* Error: Bus ID out of range */
 	    	break ;
